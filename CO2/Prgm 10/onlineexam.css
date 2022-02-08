@@ -1,0 +1,21 @@
+h1{
+    font-size: 80px;
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+    border-style: double;
+    color: aliceblue;
+}
+body
+{
+  background:url("book.jpg") ;
+}
+h3
+{
+    font-size: 25px;
+    text-align: center;
+    border: none;
+    color: aliceblue; 
+}
+td{
+    color: aliceblue;
+}

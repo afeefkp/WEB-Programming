@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="onlineexam.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <script type="text/javascript">
+        var c=0;
+        var score=0;
+        function funct()
+        {
+            if(document.getElementById('a').checked)
+    
+          {
+           score++;
+          }  
+         
+          if(document.getElementById('f').checked)
+    
+    {
+     score++;
+    }  
+         if(document.getElementById('dd').checked)
+         {
+             score++;
+         }
+          
+          document.write("your score is out of 3    :") ;
+          document.write(score);
+            
+        }
+</script>
+    
+    <title>online exam</title>
+</head>
+<body>
+    <h1>Online exam</h1>
+    <table>
+        <tr>
+            <td>
+                <h3>1.&nbsp;&nbsp;&nbsp;&nbsp;Calculate 1+1=?</h3>
+            </td>
+        </tr>
+    </table>
+    <table class="table2">
+        <tr>
+            <td>
+                <input type="radio" name="q1" id="a" value="2">2
+                <br>
+                <input type="radio" name="q1"  id="b"value="3">3
+                <br>
+                <input type="radio" name="q1" id="c" value="4">4
+                <br>
+                <input type="radio" name="q1" id="d" value="5">5
+                <br>
+            </td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td>
+                <h3>2.&nbsp;&nbsp;&nbsp;&nbsp;Calculate 3*2=?</h3>
+            </td>
+        </tr>
+    </table>
+    <table class="table2">
+        <tr>
+            <td>
+                <input type="radio" name="q2" id="e" value="11">2
+                <br>
+                <input type="radio" name="q2" id="f" value="6">6
+                <br>
+                <input type="radio" name="q2" id="g" value="9">4
+                <br>
+                <input type="radio" name="q2"  id="h"value="10">5
+                <br>
+            </td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td>
+                <h3>3.&nbsp;&nbsp;&nbsp;&nbsp;Calculate 5/1=?</h3>
+            </td>
+        </tr>
+    </table>
+    <table class="table2">
+        <tr>
+            <td>
+                <input type="radio" name="q3" id="ss" value="2">2
+                <br>
+                <input type="radio" name="q3" id="bb" value="3">3
+                <br>
+                <input type="radio" name="q3" id="cc" value="4">4
+                <br>
+                <input type="radio" name="q3" id="dd" value="5">5
+                <br>
+            </td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <button onclick="funct()">SUBMIT</button>
+</body>
+</html>

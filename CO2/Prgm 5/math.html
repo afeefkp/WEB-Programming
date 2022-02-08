@@ -1,0 +1,56 @@
+<html>
+<head>
+	<script>
+    function max()
+{
+	var a=document.getElementById('str1').value;
+    var b=document.getElementById('str2').value;
+	fst=Math.max(a,b)
+    document.getElementById('first').value=fst;
+    fs=Math.min(a,b)
+    document.getElementById('second').value=fs;
+    nn=Math.pow(a,b)
+    document.getElementById('third').value=nn;
+    nc=Math.sqrt(a)
+    document.getElementById('four').value=nc;
+    zz=Math.sqrt(b)
+    document.getElementById('five').value=zz;
+}
+</script>
+</head>
+<body>
+    <body>
+        <table>
+            <tr>
+                <td><label>Enter the first Number</label></td>
+                <td><input type="text" id="str1"></td>
+                <td><label>Enter the second Number</label></td>
+                <td><input type="text" id="str2"></td>
+                <td><button onclick="max()">Click Here!</button></td>
+        
+            </tr>
+            <tr>
+        <td><label>Max Number</label></td>
+                <td><input type="text" id="first"></td>
+            </tr>
+            <tr>
+                <td><label>Min Number</label></td>
+                        <td><input type="text" id="second"></td>
+                    </tr>
+            <tr>
+                <tr>
+                    <td><label>Power</label></td>
+                            <td><input type="text" id="third"></td>
+                        </tr>
+                <tr>
+        <td><label>square root of first number</label></td>
+                <td><input type="text" id="four"></td>
+            </tr>
+            <tr>
+        <td><label>square root of second number</label></td>
+                <td><input type="text" id="five"></td>
+            </tr>
+        </table>
+        </body>
+        </html>
+</body>

@@ -1,0 +1,115 @@
+<html>
+<head>
+	<script>
+    function string()
+{
+	var s=document.getElementById('str').value;
+	fst=s.charAt(0);
+	document.getElementById('first').value=fst;
+	lc=s.toLowerCase();
+	document.getElementById('lower').value=lc;
+	uc=s.toUpperCase();
+	document.getElementById('upper').value=uc;
+	rev=s.reverse();
+	document.getElementById('rv').value=rev;
+}
+function cont(){
+var s=document.getElementById('str').value;
+var m=document.getElementById('con').value;
+conct=s.concat(m)
+document.getElementById('concat').value=conct;
+}
+function replace(){
+var s=document.getElementById('str').value;
+var s1=document.getElementById('rep').value;
+var s2=document.getElementById('new').value;
+ns=s.replace(s1,s2)
+document.getElementById('news').value=ns;
+}
+function index1(){
+var s=document.getElementById('str').value;
+var r=document.getElementById('ind').value;
+inde=s.indexOf(r);
+document.getElementById('indi').value=inde;
+}
+function slice()
+{
+var s=document.getElementById('news').value;
+var s2=document.getElementById('start').value;
+var s3=document.getElementById('end').value;
+sl=s.slice(s2,s3);
+document.getElementById('sl').value=sl;
+}
+</script>
+</head>
+<body>
+    <body>
+        <table>
+            <tr>
+                <td><label>Enter the string</label></td>
+                <td><input type="text" id="str"></td>
+                <td><button onclick="string()">Click Here!</button></td>
+        
+            </tr>
+            <tr>
+        <td><label>Element at first position</label></td>
+                <td><input type="text" id="first"></td>
+            </tr>
+            <tr>
+        <td><label>	To lower case</label></td>
+                <td><input type="text" id="lower"></td>
+            </tr>
+            <tr>
+        <td><label>Toupper case</label></td>
+                <td><input type="text" id="upper"></td>
+            </tr>
+            <tr>
+                <td><label>Enter string to concat</label></td>
+                <td><input type="text" id="con"></td>
+                <td><button onclick="cont()">Click Here!</button></td>
+                <td><input type="text" id="concat"></td>
+            </tr>
+            <tr>
+                <td><label>Enter string to be replaced</label></td>
+                <td><input type="text" id="rep"></td>
+            </tr>
+            <tr>
+                <td><label>Enter new string</label></td>
+                <td><input type="text" id="new"></td>
+        
+                <td><button onclick="replace()">Click Here!</button></td>
+            </tr>
+            <tr>
+                <td><label>New string</label></td>
+                <td><input type="text" id="news"></tr>
+            </tr>
+            <tr>
+                <td><label>index</label></td>
+                <td><input type="text" id="ind">
+                    <td><button onclick="index1()">Click Here!</button></td>
+                    <td><input type="text" id="indi">
+            </tr>
+              <tr>
+                  <td><label>Enter starting index to Slice</label></td>
+                       
+                        <td>
+                            <input type="number" id='start'>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Enter ending index to Slice</label></td>
+                         <td>   <input type="number" id='end'>
+                        </td>
+                        <td><button onclick="slice()">Click Here!</button></td>
+                        <td>
+                            <input type="text" id='sl'>
+                        </td>
+                    </tr>
+        </table>
+        
+        
+        
+            </body>
+        </html>
+</body>
