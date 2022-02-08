@@ -1,0 +1,89 @@
+body {
+    background-color: powderblue;
+    text-align: center;
+    
+    }
+  h1 {
+    color: rgba(1, 0, 3, 0.884);
+    font-family: Courier, Monospace;
+  }
+
+  table{
+    width: 100%;
+  }
+  a:link {
+    color: rgb(13, 14, 13);
+    background-color: transparent;
+    text-decoration: none;
+  }
+  a:visited {
+    color: rgb(2, 2, 2);
+    background-color: transparent;
+    text-decoration: none;
+  }
+  a:hover {
+    color: rgb(8, 8, 8);
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  a:active {
+    color: rgb(8, 8, 8);
+    background-color: transparent;
+    text-decoration: underline;
+  }
+ .city{
+   background-color: orange;
+ }
+ .thunder{
+    width: "100%";
+ }
+ .captain{
+   font-family: Verdana, sans-serif;;
+ }
+ hr{
+  height:2px;
+  border-width:0;
+  color:orange;
+  background-color:orange;
+
+ }
+ table.table2{
+  width:150px;
+  font-size:14px;
+  border-collapse:collapse;
+}
+table.table3{
+  width:20%;
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+  text-align: left;
+}
+table.table2{
+  width:150px;
+  font-size:14px;
+  text-align: left;
+  border-collapse:collapse;
+}
+h4 {
+  color: rgba(1, 0, 3, 0.884);
+  font-family: Courier, Monospace;
+}
+table.table4{
+  border:1px solid black;
+
+
+}
+tr.cc{
+  border:1px solid black; 
+}
+td.cc{
+  border:1px solid black; 
+}
+table.table55{
+  width:20%;
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+  text-align: left;
+}
