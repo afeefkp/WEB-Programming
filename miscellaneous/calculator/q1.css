@@ -1,0 +1,32 @@
+h1{
+    text-align:center;
+    font-family: 'Comforter Brush', cursive;
+    font-size: 60px;
+}
+
+table.one {
+
+    border: 1px solid black;
+    table-layout: fixed ;
+    width: 50% ;
+    border-radius: 10px;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    margin-right: -500px;
+    margin-left: 400px;
+
+    }
+table.two{
+    border: 1px solid black;
+    table-layout: fixed ;
+    width: 50% ;
+    border-radius: 10px;
+    margin-top: -200px;
+    margin-bottom: -50px;
+    margin-right: 150px;
+    margin-left: 400px;
+}
+  td {
+    width: 25% ;
+
+  } 
