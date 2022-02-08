@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <title>validation</title>
+    <script>
+        function Validateform()
+        {
+            var name=document.myform.name.value;
+            var password=document.myform.password.value;
+            var email=document.myform.email.value;
+            var mobile=document.myform.mobile.value;
+            var pattern = /^[^ ]+@[^ ]+\$/;
+            if(name==null||name=="")
+            {
+                alert("Name can't be blank");
+                return false;
+            }
+            else if(email.match(pattern))
+            {
+                alert("emails only contain letters and digits");
+                return false;
+            }
+            else if(mobile.length!=10)
+            {
+               alert("invalid mobile number");
+               return false;
+            }
+
+            else if(password.length<6 || password==pattern)
+            {
+                alert("Password must be 6 character length");
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Register Here</h1>
+    <table class="center">
+    <form name="myform" method="post" action="text.php" onsubmit="return Validateform()">
+    <tr>
+    <td class="one">
+    Name:
+    </td>
+    <td>
+    <input type="text" name="name"><br/>
+    </td>
+    </tr>
+    <tr>
+    <td class="one">
+    Email:
+    </td>
+    <td>
+    <input type="email" name="email"><br/>
+    </td>
+    </tr>
+    <tr>
+    <td class="one">
+    Date:
+    </td>
+    <td>
+    <input type="date" name="date"><br/>
+    </td>
+    </tr>
+    <tr>
+    <td class="one">
+    Mobile Number:
+    </td>
+    <td>
+    <input type="text" name="mobile"><br/>
+    </td>
+    </tr>
+    <tr>
+    <td class="one">
+    Password:
+    </td>
+    <td>
+    <input type="password" name="password"<br/>
+    </td>
+    </tr>
+    <tr>
+    <td class="reg">
+    <input type="submit" value="Register" style="height:25px; width:100px">
+    </td>
+    </tr>
+    </form>
+    </table>
+</body>
+</html>
