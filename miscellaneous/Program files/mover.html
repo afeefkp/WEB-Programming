@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <title>Document</title>
+    <script>
+      function fn1() {
+        document.getElementById("image").src = "rbjr..jpg";
+        document.getElementById("text").innerHTML = "I.. AM... IRON MAN";
+      }
+      function fn2() {
+        document.getElementById("image").src = "thanos.jpg";
+        document.getElementById("text").innerHTML = "I AM INEVITABLE";
+      }
+    </script>
+  </head>
+  <body>
+    <img
+      src="thanos.jpg"
+      \
+      onmouseover="fn1()"
+      onmouseout="fn2()"
+      width="50%"
+      height="50%"
+      id="image"
+    />
+    <h1 id="text">"I AM INEVITABLE"</h1>
+  </body>
+</html>

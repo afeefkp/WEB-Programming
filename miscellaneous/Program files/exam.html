@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      score = 0;
+      function fn() {
+        if (document.getElementById("a1").checked) {
+          score++;
+        }
+        if (document.getElementById("b2").checked) {
+          score++;
+        }
+        document.write("your score is= ");
+        document.write(score);
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Online EXAM</h1>
+    <table>
+      <tr>
+        <td>1.Who is the PM?</td>
+      </tr>
+      <tr>
+        <td><input type="radio" name="q1" id="a1" />afeef</td>
+      </tr>
+      <br />
+      <tr>
+        <td><input type="radio" name="q1" id="a2" />feef</td>
+      </tr>
+      <br />
+      <tr>
+        <td><input type="radio" name="q1" id="a3" />afee</td>
+      </tr>
+      <br />
+      <tr>
+        <td>2.Who is the MP?</td>
+      </tr>
+      <tr>
+        <td><input type="radio" name="q2" id="b1" />ds</td>
+      </tr>
+      <br />
+      <tr>
+        <td><input type="radio" name="q2" id="b2" />wahab</td>
+      </tr>
+      <br />
+      <tr>
+        <td><input type="radio" name="q2" id="b3" />afee</td>
+      </tr>
+      <br />
+      <tr>
+        <td>
+          <input type="submit" onclick="fn()" value="submit" id="submit" />
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

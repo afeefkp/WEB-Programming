@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <script>
+      function change() {
+        a = "#" + (((1 << 24) * Math.random()) | 0).toString(8);
+        document.getElementById("k").style.backgroundColor = a;
+      }
+    </script>
+  </head>
+  <body id="k">
+    <input type="button" value="change background" onclick="change()" />
+  </body>
+</html>
