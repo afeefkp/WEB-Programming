@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Rand col</title>
+  </head>
+  <body id="k">
+    <input type="Button" onclick="fn()" value="click" />
+    <script>
+      s;
+      function fn() {
+        kl = "#" + (((1 << 24) * Math.random()) | 0).toString(16);
+        document.getElementById("k").style.backgroundColor = kl;
+        //alert(kl);
+      }
+    </script>
+  </body>
+</html>

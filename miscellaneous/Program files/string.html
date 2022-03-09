@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+
+    <script>
+      function str() {
+        var str = document.getElementById("string").value;
+        first = str.charAt(0);
+        document.getElementById("first").value = first;
+        u = str.toUpperCase();
+        document.getElementById("ucase").value = u;
+        l = str.toLowerCase();
+        document.getElementById("lcase").value = l;
+        var cstr = document.getElementById("conc").value;
+        nstr = str.concat(cstr);
+        document.getElementById("new string").value = nstr;
+      }
+    </script>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td>String:</td>
+        <td><input type="text" name="" id="string" /></td>
+        <td><button onclick="str()">click here</button></td>
+      </tr>
+      <tr>
+        <td>Element at first position:</td>
+        <td><input type="text" name="" id="first" /></td>
+      </tr>
+      <tr>
+        <td>uppercase:</td>
+        <td><input type="text" name="" id="ucase" /></td>
+      </tr>
+      <tr>
+        <td>lowercase:</td>
+        <td><input type="text" name="" id="lcase" /></td>
+      </tr>
+      <tr>
+        <td>Enter string to concat:</td>
+        <td><input type="text" name="" id="conc" /></td>
+        <td><button onclick="str()">Concat</button></td>
+      </tr>
+      <tr>
+        <td>New string:</td>
+        <td><input type="text" name="" id="new string" /></td>
+      </tr>
+    </table>
+  </body>
+</html>
